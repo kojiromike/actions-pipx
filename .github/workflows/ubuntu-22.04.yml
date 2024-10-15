@@ -1,0 +1,13 @@
+name: ubuntu-22.04
+
+on: workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  demo:
+    timeout-minutes: 1
+    runs-on: ubuntu-22.04
+    steps:
+    - run: pipx --version
